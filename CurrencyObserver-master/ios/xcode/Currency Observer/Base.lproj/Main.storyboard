@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ufs-A5-ZP2">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cryptocurrency-->
+        <scene sceneID="qdv-Ca-TgY">
+            <objects>
+                <tableViewController id="e6M-oL-3KT" customClass="CryptocurrencyTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mLy-vh-nJX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cryptocurrencyCell" rowHeight="72" id="yuG-9O-mhW" customClass="CryptocurrencyCell">
+                                <rect key="frame" x="0.0" y="28" width="320" height="72"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yuG-9O-mhW" id="rV1-FH-Uzm">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="71.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cryptocurrency" translatesAutoresizingMaskIntoConstraints="NO" id="3QE-6j-DsO">
+                                            <rect key="frame" x="16" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="TrZ-y5-ZOq"/>
+                                            </constraints>
+                                        </imageView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Lorem ipsum dolor sit er" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hIm-dO-CJa">
+                                            <rect key="frame" x="88" y="3" width="192" height="29"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="Lorem ipsum dolor sit er elit lamet" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KXA-qD-vs8">
+                                            <rect key="frame" x="88" y="34" width="192" height="27"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="27" id="kT5-Sc-tU8"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="hIm-dO-CJa" secondAttribute="trailing" constant="24" id="0HK-ew-vxQ"/>
+                                        <constraint firstItem="3QE-6j-DsO" firstAttribute="top" secondItem="hIm-dO-CJa" secondAttribute="top" constant="-3" id="0KX-7z-hfe"/>
+                                        <constraint firstItem="3QE-6j-DsO" firstAttribute="bottom" secondItem="KXA-qD-vs8" secondAttribute="bottom" constant="3" id="3Ku-DM-kR2"/>
+                                        <constraint firstItem="hIm-dO-CJa" firstAttribute="leading" secondItem="KXA-qD-vs8" secondAttribute="leading" id="4kC-ss-Wyq"/>
+                                        <constraint firstItem="3QE-6j-DsO" firstAttribute="top" secondItem="rV1-FH-Uzm" secondAttribute="top" id="67c-fp-AJF"/>
+                                        <constraint firstItem="3QE-6j-DsO" firstAttribute="leading" secondItem="rV1-FH-Uzm" secondAttribute="leadingMargin" id="7Py-lm-KLb"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="3QE-6j-DsO" secondAttribute="bottom" constant="-3" id="E6M-6K-Czf"/>
+                                        <constraint firstItem="KXA-qD-vs8" firstAttribute="top" secondItem="hIm-dO-CJa" secondAttribute="bottom" constant="2" id="fbv-oH-04F"/>
+                                        <constraint firstItem="hIm-dO-CJa" firstAttribute="leading" secondItem="3QE-6j-DsO" secondAttribute="trailing" constant="8" symbolic="YES" id="lNi-aw-yIK"/>
+                                        <constraint firstItem="hIm-dO-CJa" firstAttribute="trailing" secondItem="KXA-qD-vs8" secondAttribute="trailing" id="ulc-tR-cRZ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="iconImage" destination="3QE-6j-DsO" id="oWh-Yp-kQx"/>
+                                    <outlet property="imageView" destination="3QE-6j-DsO" id="b6Q-oU-9di"/>
+                                    <outlet property="priceText" destination="KXA-qD-vs8" id="4qP-FC-aac"/>
+                                    <outlet property="titleText" destination="hIm-dO-CJa" id="tkE-rb-AbW"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="e6M-oL-3KT" id="LZq-uy-35g"/>
+                            <outlet property="delegate" destination="e6M-oL-3KT" id="PBH-Vy-MRw"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Cryptocurrency" id="0TP-5l-3ft"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wEb-5T-YQC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="292.5" y="164.78873239436621"/>
+        </scene>
+        <!--Currency-->
+        <scene sceneID="PeG-uc-bPH">
+            <objects>
+                <tableViewController id="HCg-FO-8iT" customClass="CurrencyTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AuS-Qh-Wci">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="currencyCell" textLabel="vyG-vs-yuf" imageView="POu-ZD-Rcb" style="IBUITableViewCellStyleDefault" id="l7N-xh-eYv">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l7N-xh-eYv" id="EHT-66-bj6">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vyG-vs-yuf">
+                                            <rect key="frame" x="51" y="0.0" width="253" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Currency" id="POu-ZD-Rcb">
+                                            <rect key="frame" x="16" y="11" width="20" height="20"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HCg-FO-8iT" id="Tlg-2a-Pwd"/>
+                            <outlet property="delegate" destination="HCg-FO-8iT" id="q09-UA-QMt"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Currency" id="WZs-Ln-8lV"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aAn-Jt-ZXX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="293" y="-488"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Hon-jL-uck">
+            <objects>
+                <tabBarController id="ufs-A5-ZP2" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MaB-fR-iC9" userLabel="dad">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="exL-f7-W07" kind="relationship" relationship="viewControllers" id="hEp-Y9-oVV"/>
+                        <segue destination="bUs-mz-PwQ" kind="relationship" relationship="viewControllers" id="H8G-Tn-KPt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k3v-G1-OAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1525" y="-162"/>
+        </scene>
+        <!--Currency-->
+        <scene sceneID="kEe-GP-eHa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="exL-f7-W07" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Currency" image="Currency" selectedImage="Currency" id="mKS-wv-dR1"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NPx-qI-l2q">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HCg-FO-8iT" kind="relationship" relationship="rootViewController" id="6zZ-wD-8A2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W7W-Ni-5Ud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-573.75" y="-488.02816901408454"/>
+        </scene>
+        <!--Cryptocurrency-->
+        <scene sceneID="sDi-hF-Nlo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bUs-mz-PwQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cryptocurrency" image="Cryptocurrency" selectedImage="Cryptocurrency" id="aTu-jq-rrO"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mp5-gq-3SA">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="e6M-oL-3KT" kind="relationship" relationship="rootViewController" id="7uG-F4-vW5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Phh-Ht-Cdp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-574" y="165"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cryptocurrency" width="20" height="20"/>
+        <image name="Currency" width="20" height="20"/>
+    </resources>
+</document>

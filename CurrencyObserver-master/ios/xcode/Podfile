@@ -1,0 +1,6 @@
+platform :ios, '9.3'
+
+target 'Currency Observer' do
+  pod 'SDWebImage', '~> 4.0'
+  pod 'SVPullToRefresh'
+end

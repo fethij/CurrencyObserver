@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_currency"
+        android:icon="@drawable/ic_currency"
+        android:title="@string/title_currency"/>
+
+    <item
+        android:id="@+id/navigation_cryptocurrency"
+        android:icon="@drawable/ic_currency_btc"
+        android:title="@string/title_crypto_currency"/>
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_settings"-->
+        <!--android:icon="@drawable/ic_settings"-->
+        <!--android:title="@string/title_settings"/>-->
+
+</menu>

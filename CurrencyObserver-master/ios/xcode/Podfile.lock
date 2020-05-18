@@ -1,0 +1,22 @@
+PODS:
+  - SDWebImage (4.3.3):
+    - SDWebImage/Core (= 4.3.3)
+  - SDWebImage/Core (4.3.3)
+  - SVPullToRefresh (0.4.1)
+
+DEPENDENCIES:
+  - SDWebImage (~> 4.0)
+  - SVPullToRefresh
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SDWebImage
+    - SVPullToRefresh
+
+SPEC CHECKSUMS:
+  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+
+PODFILE CHECKSUM: 910b5c611a15fd08c5857ce555d7f672b5b27d9a
+
+COCOAPODS: 1.5.0

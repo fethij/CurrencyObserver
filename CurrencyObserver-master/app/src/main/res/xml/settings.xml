@@ -1,0 +1,15 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/title_main_section">
+
+        <ListPreference
+            android:key="list_preference"
+            android:title="@string/pref_title_currency_preference"
+            android:dialogTitle="@string/pref_dialog_title_currency_preference"
+            android:entries="@array/pref_entries_currency_preference"
+            android:entryValues="@array/pref_entryvalues_currency_preference" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
